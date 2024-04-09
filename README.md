@@ -4,18 +4,18 @@ Minimal tool to extract the generation metadata of an image produced by Automati
 ![Screenshot of the Web UI](screenshot.png)
 
 ## Installation
-> You will need have [Python](https://www.python.org/downloads/) and optionally [Anaconda](https://www.anaconda.com/download) downloaded before installing Prompt Retreiver.
+> You will need have [Python](https://www.python.org/downloads/) and [Anaconda](https://www.anaconda.com/download) downloaded before installing Prompt Retreiver.
 
 Open a terminal where you want to install Prompt Retreiver and clone this repository:
 ```bash
 git clone https://github.com/brayevalerien/Prompt-retreiver
 ``` 
 
-Then `cd` into the cloned repository and create a new Anaconda environment and activate it (optional):
+Then `cd` into the cloned repository and create a new Anaconda environment and activate it:
 ```bash
 cd Prompt-retreiver
-conda create -n promptretreiver -y # these two lines
-conda activate promptretreiver     # are optional
+conda create -n promptretreiver -y
+conda activate promptretreiver
 ```
 
 Install the required libraries:
@@ -23,13 +23,10 @@ Install the required libraries:
 pip install -r requirements.txt
 ```
 
-Finaly, start the Gradio server by running:
-```bash
-python webui.py
-```
+Everything is now setup to start using Prompt Retreiver.
 
 ## Usage
-After running [webui.py](webui.py), a Gradio server will start on port 6006 (make sure it is not already in use) and the UI will open in your browser.
+Run [start.bat](start.bat) to start the Gradio server of Prompt Retreiver. It uses local port 6006 so make sure no other application is using it.
 
 Simple drop or upload an image you have generated and it will display the image generation informations in the textboxes bellow, if they were saved in the image. You can then copy the informations and reuse them elsewhere.
 
@@ -52,4 +49,4 @@ Optional features:
 - [x] support for both Fooocus and Automatic1111 metadata schemes
 - [ ] cleaner parsing code
 - [ ] integrate into [Fooocus Lite](https://github.com/brayevalerien/Fooocus-Lite)?
-- [ ] add one-click launching script
+- [x] add one-click launching script
