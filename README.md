@@ -49,5 +49,7 @@ Mandatory features:
 
 Optional features:
 - [ ] rearange the UI to make it easier to work with
-- [ ] support for both Fooocus and Automatic1111 metadata schemes
+- [x] support for both Fooocus and Automatic1111 metadata schemes
+- [ ] cleaner parsing code
 - [ ] integrate into [Fooocus Lite](https://github.com/brayevalerien/Fooocus-Lite)?
+- [ ] add one-click launching script
