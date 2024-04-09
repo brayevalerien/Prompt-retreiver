@@ -15,5 +15,6 @@ with groot:
         inputs=input_image, 
         outputs=[positive, negative, model]
     )
-        
+
+
 groot.launch(inbrowser=True, server_port=6006)
