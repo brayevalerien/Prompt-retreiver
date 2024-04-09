@@ -4,11 +4,12 @@ import metadata_extracter as emd
 groot = gr.Blocks(title="Prompt Retreiver")
 
 with groot:
-    with gr.Column():
-        input_image = gr.Image(type="filepath")
-        positive = gr.Text(label="Positive prompt", show_label=True, show_copy_button=True)
-        negative = gr.Text(label="Negative prompt", show_label=True, show_copy_button=True)
-        model = gr.Text(label="Model name", show_label=True, show_copy_button=True)
+    with gr.Row():
+        input_image = gr.Image(type="filepath", sources=["upload", "clipboard"], height="30vw")
+        with gr.Column():
+            positive = gr.Text(label="Positive prompt", show_label=True, show_copy_button=True)
+            negative = gr.Text(label="Negative prompt", show_label=True, show_copy_button=True)
+            model = gr.Text(label="Model name", show_label=True, show_copy_button=True)
         
     input_image.change(
         fn=emd.extract_metadata,

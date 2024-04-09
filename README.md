@@ -45,7 +45,7 @@ Mandatory features:
 - [x] implement the function to extract metadata
 
 Optional features:
-- [ ] rearange the UI to make it easier to work with
+- [x] rearange the UI to make it easier to work with
 - [x] support for both Fooocus and Automatic1111 metadata schemes
 - [ ] cleaner parsing code
 - [ ] integrate into [Fooocus Lite](https://github.com/brayevalerien/Fooocus-Lite)?
