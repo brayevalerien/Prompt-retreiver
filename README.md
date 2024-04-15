@@ -48,5 +48,5 @@ Optional features:
 - [x] rearange the UI to make it easier to work with
 - [x] support for both Fooocus and Automatic1111 metadata schemes
 - [x] cleaner parsing code
-- [ ] integrate into [Fooocus Lite](https://github.com/brayevalerien/Fooocus-Lite)?
+- [x] integrate into [Fooocus Lite](https://github.com/brayevalerien/Fooocus-Lite)?
 - [x] add one-click launching script
