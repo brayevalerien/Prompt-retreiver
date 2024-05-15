@@ -129,7 +129,8 @@ def extract_metadata(image_path: str) -> tuple[str, str, str]:
         return "", "", ""
     raw_metadata = get_raw_metadata(Image.open(image_path))
     info_dict = extract_info(raw_metadata)
-    if info_dict["negative"].endswith(", "): #removes unnecessary ", " from the negative prompt (usually created by foocus image metadata).
+    # removes unnecessary ", " from the negative prompt (usually included when parsing Fooocus image metadata).
+    if info_dict["negative"].endswith(", "):
         info_dict["negative"] = info_dict["negative"][:-2]
     return info_dict["positive"], info_dict["negative"], info_dict["model"]
     
